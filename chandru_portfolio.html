@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chandru M | Robotics Portfolio</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI, sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f172a,#020617);
+color:white;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:rgba(0,0,0,0.4);
+backdrop-filter:blur(10px);
+position:sticky;
+top:0;
+}
+
+nav h2{
+color:#38bdf8;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+.hero{
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+flex-direction:column;
+}
+
+.hero h1{
+font-size:60px;
+background:linear-gradient(90deg,#38bdf8,#22c55e);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+.hero p{
+margin-top:10px;
+font-size:20px;
+opacity:0.8;
+}
+
+.hero button{
+margin-top:20px;
+padding:12px 25px;
+border:none;
+border-radius:25px;
+background:#38bdf8;
+color:black;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+.hero button:hover{
+transform:scale(1.1);
+}
+
+section{
+padding:80px 10%;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+border-radius:20px;
+padding:25px;
+transition:0.4s;
+transform-style:preserve-3d;
+}
+
+.card:hover{
+transform:rotateY(10deg) rotateX(10deg) scale(1.05);
+background:rgba(255,255,255,0.1);
+}
+
+.card h3{
+color:#38bdf8;
+margin-bottom:10px;
+}
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+}
+
+.skill{
+padding:10px 20px;
+background:#1e293b;
+border-radius:20px;
+transition:0.3s;
+}
+
+.skill:hover{
+background:#38bdf8;
+color:black;
+}
+
+.social{
+display:flex;
+gap:25px;
+font-size:30px;
+margin-top:20px;
+}
+
+.social a{
+color:white;
+transition:0.3s;
+}
+
+.social a:hover{
+color:#38bdf8;
+transform:scale(1.2);
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#020617;
+margin-top:50px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<h2>Chandru M</h2>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<div class="hero">
+<h1>Chandru M</h1>
+<p>Robotics | Embedded Systems | Electronics Engineer</p>
+<button onclick="document.location='#projects'">
+View My Projects
+</button>
+</div>
+
+<section id="about">
+<h2>About Me</h2>
+<br>
+<p>
+I am Chandru M from Coimbatore, currently pursuing BE in Electronics and Communication Engineering at
+Sri Shakthi Institute of Engineering and Technology.
+I completed my Diploma in Electronics and Communication Engineering from
+CIT Sandwich Polytechnic College.
+I am passionate about robotics, embedded systems, and automation. I enjoy designing and building
+projects using microcontrollers, sensors, and wireless communication systems.
+</p>
+</section>
+
+<section id="skills">
+<h2>Technologies</h2>
+<br>
+<div class="skills">
+<div class="skill">ESP32</div>
+<div class="skill">Arduino</div>
+<div class="skill">MPU6050</div>
+<div class="skill">RF Communication</div>
+<div class="skill">Servo Motor Control</div>
+<div class="skill">Embedded Systems</div>
+<div class="skill">IoT</div>
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<br>
+<div class="projects">
+
+<div class="card">
+<h3>Gyro Controlled Robotic Arm</h3>
+<p>
+Robotic arm controlled using MPU6050 gyroscope sensors and RF wireless communication.
+Includes touch sensor mode switching and return home function.
+</p>
+</div>
+
+<div class="card">
+<h3>Wireless Servo Control System</h3>
+<p>
+A wireless robotic control system using RF modules and ESP32 for controlling servo motors remotely.
+</p>
+</div>
+
+<div class="card">
+<h3>Touch Controlled Sensor Switching</h3>
+<p>
+A control system that switches between multiple MPU6050 sensors using capacitive touch sensors.
+</p>
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<h2>Connect With Me</h2>
+<br>
+<p>Email: yourmail@email.com</p>
+<div class="social">
+<a href="#"><i class="fab fa-github"></i></a>
+<a href="#"><i class="fab fa-linkedin"></i></a>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Chandru M | Robotics Portfolio</p>
+</footer>
+
+</body>
+</html>
